@@ -36,4 +36,12 @@ public class RomanNumeralTestWithBeforeEach {
         int result = roman.convert("XLIV");
         Assertions.assertEquals(44, result);
     }
+
+    @Test
+    public void numberInSmallCharacters() {
+        int result = roman.convert("xiv");
+        Assertions.assertEquals(14, result);
+    }
+
+
 }
